@@ -15,6 +15,6 @@ class ProjectController extends Controller
 
     public function About(Request $request)
     {
-        return view("about");
+        return view("contact");
     }
 }

@@ -14,4 +14,4 @@ use App\Http\Controllers\ProjectController;
 */
 
 Route::get('/', [ProjectController::class,'GetData'])->name("home");
-Route::get('/about', [ProjectController::class,'About'])->name("about");
+Route::get('/contact-us', [ProjectController::class,'About'])->name("ContactUs");

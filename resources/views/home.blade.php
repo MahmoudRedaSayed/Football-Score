@@ -4,8 +4,8 @@
     <div class="row mt-5 mx-4">
         @if(!is_null($content))
         @foreach($content["data"]  as $match)
-        <div class="col-lg-4 col-md-4 col-sm-12 text-center mb-5 mx-5">
-            <div class="card" style="width:30rem">
+        <div class="col-lg-5 col-md-4 col-sm-12 text-center mb-5 mx-auto">
+            <div class="card" >
             <img/>
             <div class="card-body">
                 <div class="card-title">{{$match["teams"]["home"]["name"]}} <img style="width:30px" src="{{$match['teams']['home']['img']}}"/> @if(isset($match["scores"]["home_score"]) && isset($match["scores"]["away_score"])) {{$match["scores"]["home_score"]}} -  {{$match["scores"]["away_score"]}} @endif <img style="width:30px" src="{{$match['teams']['away']['img']}}"/> {{$match["teams"]["away"]["name"]}}</div>
